@@ -1,11 +1,16 @@
-﻿//string[] pallets = [ "B14", "A11", "B12", "A13" ];
+﻿string[] pallets = [ "B14", "A11", "B12", "A13" ];
 
-//Console.WriteLine("Sorted...");
-//Array.Sort(pallets);
-//foreach (var pallet in pallets)
-//{
-//    Console.WriteLine($"-- {pallet}");
-//}
+Console.WriteLine("Sorted...");
+Array.Sort(pallets);
+foreach (var pallet in pallets)
+{
+    Console.WriteLine($"-- {pallet}");
+}
+//sorted...
+//-- A11
+//-- A13
+//-- B12
+//-- B14
 
 //Console.WriteLine("");
 //Console.WriteLine("Reversed...");
@@ -71,16 +76,19 @@
 //    Console.WriteLine($"-- {pallet}");
 //}
 
-string value = "abc123";
-char[] valueArray = value.ToCharArray();
-Array.Reverse(valueArray);
+//string value = "abc123";
+//char[] valueArray = value.ToCharArray();
+//Array.Reverse(valueArray);
 // string result = new string(valueArray);
-string result = String.Join(",", valueArray);
-Console.WriteLine(result);
+//string result = String.Join(",", valueArray);
+//Console.WriteLine(result);
 
-string[] items = result.Split(',');
-foreach (string item in items)
-{
-    Console.WriteLine(item);
-}
+//string[] items = result.Split(',');
+//foreach (string item in items)
+//{
+//    Console.WriteLine(item);
+//}
+
+
+string pangram = "The quick brown fox jumps over the lazy dog";
 
