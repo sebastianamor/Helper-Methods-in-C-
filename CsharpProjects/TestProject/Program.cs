@@ -1,16 +1,11 @@
-﻿string[] pallets = [ "B14", "A11", "B12", "A13" ];
+﻿//string[] pallets = [ "B14", "A11", "B12", "A13" ];
 
-Console.WriteLine("Sorted...");
-Array.Sort(pallets);
-foreach (var pallet in pallets)
-{
-    Console.WriteLine($"-- {pallet}");
-}
-//sorted...
-//-- A11
-//-- A13
-//-- B12
-//-- B14
+//Console.WriteLine("Sorted...");
+//Array.Sort(pallets);
+//foreach (var pallet in pallets)
+//{
+//    Console.WriteLine($"-- {pallet}");
+//}
 
 //Console.WriteLine("");
 //Console.WriteLine("Reversed...");
@@ -19,6 +14,13 @@ foreach (var pallet in pallets)
 //{
 //    Console.WriteLine($"-- {pallet}");
 //}
+//sorted...
+//-- A11
+//-- A13
+//-- B12
+//-- B14
+
+
 
 //string[] pallets = [ "B14", "A11", "B12", "A13" ];
 //Console.WriteLine("");
@@ -29,21 +31,35 @@ foreach (var pallet in pallets)
 //{
 //    Console.WriteLine($"-- {pallet}");
 //}
+//resultado
+//Clearing 2 ... count: 4
+//--    
+//--    
+//-- B12
+//-- A13
 
 
+string[] pallets = [ "B14", "A11", "B12", "A13" ];
+Console.WriteLine("");
 
-//string[] pallets = [ "B14", "A11", "B12", "A13" ];
-//Console.WriteLine("");
+Console.WriteLine($"Before: {pallets[0]}");
+Array.Clear(pallets, 0, 2);
+Console.WriteLine($"After: {pallets[0]}");
 
-//Console.WriteLine($"Before: {pallets[0]}");
-//Array.Clear(pallets, 0, 2);
-//Console.WriteLine($"After: {pallets[0]}");
+Console.WriteLine($"Clearing 2 ... count: {pallets.Length}");
+foreach (var pallet in pallets)
+{
+    Console.WriteLine($"-- {pallet}");
+}
 
-//Console.WriteLine($"Clearing 2 ... count: {pallets.Length}");
-//foreach (var pallet in pallets)
-//{
-  //  Console.WriteLine($"-- {pallet}");
-//}
+Before: B14
+After: 
+Clearing 2 ... count: 4
+-- 
+-- 
+-- B12
+-- A13
+
 
 //string[] pallets = [ "B14", "A11", "B12", "A13" ];
 //Console.WriteLine("");
