@@ -39,26 +39,26 @@
 //-- A13
 
 
-string[] pallets = [ "B14", "A11", "B12", "A13" ];
-Console.WriteLine("");
+//string[] pallets = [ "B14", "A11", "B12", "A13" ];
+//Console.WriteLine("");
 
-Console.WriteLine($"Before: {pallets[0]}");
-Array.Clear(pallets, 0, 2);
-Console.WriteLine($"After: {pallets[0]}");
+//Console.WriteLine($"Before: {pallets[0]}");
+//Array.Clear(pallets, 0, 2);
+//Console.WriteLine($"After: {pallets[0]}");
 
-Console.WriteLine($"Clearing 2 ... count: {pallets.Length}");
-foreach (var pallet in pallets)
-{
-    Console.WriteLine($"-- {pallet}");
-}
-
-Before: B14
-After: 
-Clearing 2 ... count: 4
--- 
--- 
--- B12
--- A13
+//Console.WriteLine($"Clearing 2 ... count: {pallets.Length}");
+//foreach (var pallet in pallets)
+//{
+//    Console.WriteLine($"-- {pallet}");
+//}
+// resultado 
+//Before: B14
+//After: 
+//Clearing 2 ... count: 4
+//-- 
+//-- 
+//-- B12
+//-- A13
 
 
 //string[] pallets = [ "B14", "A11", "B12", "A13" ];
@@ -105,6 +105,21 @@ Clearing 2 ... count: 4
 //    Console.WriteLine(item);
 //}
 
+//resultado
+//3,2,1,c,b,a
+//3
+//2
+//1
+//c
+//b
+//a
+
+
 
 string pangram = "The quick brown fox jumps over the lazy dog";
+char[] pangramArray = pangram.ToCharArray();
+Array.Reverse(pangramArray);
+// string result = new string(valueArray);
+string result = String.Join(",", pangramArray);
+Console.WriteLine(result);
 
