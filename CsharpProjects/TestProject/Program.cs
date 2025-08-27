@@ -120,6 +120,6 @@ string pangram = "The quick brown fox jumps over the lazy dog";
 char[] pangramArray = pangram.ToCharArray();
 Array.Reverse(pangramArray);
 string result = new string(pangramArray);
-//string result = String.Join("", pangramArray);
+//string result = String.Split("", pangramArray);
 Console.WriteLine(result);
 
