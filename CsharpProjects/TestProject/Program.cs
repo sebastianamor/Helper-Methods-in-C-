@@ -116,23 +116,38 @@
 
 
 
-string pangram = "The quick brown fox jumps over the lazy dog";
+//string pangram = "The quick brown fox jumps over the lazy dog";
 
 // Step 1
-string[] message = pangram.Split(' ');
+//string[] message = pangram.Split(' ');
 
 //Step 2
-string[] newMessage = new string[message.Length];
+//string[] newMessage = new string[message.Length];
 
 // Step 3
-for (int i = 0; i < message.Length; i++)
-{
-    char[] letters = message[i].ToCharArray();
-    Array.Reverse(letters);
-    newMessage[i] = new string(letters);
-}
+//for (int i = 0; i < message.Length; i++)
+//{
+//    char[] letters = message[i].ToCharArray();
+//    Array.Reverse(letters);
+//    newMessage[i] = new string(letters);
+//}
 
 //Step 4
-string result = String.Join(" ", newMessage);
+//string result = String.Join(" ", newMessage);
+//Console.WriteLine(result);
+
+// el resultado es ehT kciuq nworb xof spmuj revo eht yzal god
+
+
+string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+char[] valueArray = orderStream.ToCharArray();
+Array.Reverse(valueArray);
+// string result = new string(valueArray);
+string result = String.Join("", valueArray);
 Console.WriteLine(result);
 
+string[] items = result.Split('');
+foreach (string item in items)
+{
+    Console.WriteLine(item);
+}
