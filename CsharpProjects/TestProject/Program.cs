@@ -141,8 +141,7 @@
 
 string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
 char[] valueArray = orderStream.ToCharArray();
-Array.Reverse(valueArray);
-// string result = new string(valueArray);
+string result = new string(valueArray);
 string result = String.Join( valueArray);
 Console.WriteLine(result);
 
